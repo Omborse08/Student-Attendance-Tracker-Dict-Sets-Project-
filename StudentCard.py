@@ -27,7 +27,7 @@ while True:
         
         case 2:
             roll = (input("Enter Roll Number: "))
-            subject = input("Enter Subject: ")
+            subject = input("Enter Subject: ").split(",")
             subjects.update(subject)
             if roll in attendance:
                 attendance[roll].add(subject)
